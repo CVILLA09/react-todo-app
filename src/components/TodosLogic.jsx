@@ -16,7 +16,14 @@ const TodosLogic = () => {
             completed: false,
         },
     ];
-    // ...
+
+    return (
+        <ul>
+            {todos.map((todo) => (
+                <li key={todo.id}>{todo.title}</li>
+            ))}
+        </ul>
+    );
 };
 
 export default TodosLogic;
