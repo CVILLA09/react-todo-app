@@ -41,7 +41,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# To-do List App 📝 <a name="about-project"></a>
+# To Do List App 📝 <a name="about-project"></a>
 
 To Do List App is a Single Page App (SPA) that serves as a platform for managing daily tasks and activities. 
 The core functionality of the project includes:
