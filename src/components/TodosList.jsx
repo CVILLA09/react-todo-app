@@ -1,8 +1,11 @@
+import React from 'react';
+import TodoItem from '@/components/TodoItem';
+
 const TodosList = ({ todosProps }) => {
     return (
         <ul>
             {todosProps.map((todo) => (
-                <li key={todo.id}>{todo.title}</li>
+                <TodoItem key={todo.id} itemProp={todo} />
             ))}
         </ul>
     );
