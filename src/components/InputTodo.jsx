@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 const InputTodo = ({ addTodoItem }) => {
     const [title, setTitle] = useState('');
+    const [error, setError] = useState(false); // Add error state
 
     const handleChange = (e) => {
         setTitle(e.target.value);
+        setError(false); // Clear error when input changes
     };
 
     const handleSubmit = (e) => {
@@ -13,7 +15,7 @@ const InputTodo = ({ addTodoItem }) => {
             addTodoItem(title);
             setTitle('');
         } else {
-            alert('Please add item');
+            setError(true); // Set error if title is empty
         }
     };
 
@@ -25,7 +27,8 @@ const InputTodo = ({ addTodoItem }) => {
                 value={title}
                 onChange={handleChange}
             />
-            <button type="submit">Submit</button>
+            <button>Submit</button>
+            {error && <div>Please add item</div>}
         </form>
     );
 };
