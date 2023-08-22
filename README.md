@@ -124,7 +124,7 @@ Install the necessary dependencies by running the following command:
 To run the project, execute the following command:
 
 ```sh
-    npm start
+    npm run dev
 
 ```
 <br/>
