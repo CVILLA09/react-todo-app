@@ -104,7 +104,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-preferred-folder-name
   
-  git clone https://github.com/CVILLA09/Math-Magicians.git
+  git clone https://github.com/CVILLA09/react-todo-app.git
 ```
 <br/>
 
@@ -124,7 +124,7 @@ Install the necessary dependencies by running the following command:
 To run the project, execute the following command:
 
 ```sh
-    npm start
+    npm run dev
 
 ```
 <br/>
