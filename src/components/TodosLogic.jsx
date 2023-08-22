@@ -4,7 +4,9 @@ import TodosList from '@/components/TodosList';
 
 const TodosLogic = () => {
     const [todos, setTodos] = useState([
-        // ... (initial todos here)
+        { id: 1, title: "Learn React", completed: false },
+        { id: 2, title: "Build a Todo App", completed: false },
+        { id: 3, title: "Master React Hooks", completed: false },
     ]);
 
     const handleChange = (id) => {
