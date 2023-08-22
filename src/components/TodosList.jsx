@@ -1,3 +1,5 @@
+import TodoItem from './TodoItem';
+
 const TodosList = ({ todosProps, handleChange, delTodo }) => {
     return (
         <ul>
