@@ -27,9 +27,18 @@ const TodosLogic = () => {
         setTodos(todos.filter((todo) => todo.id !== id));
     };
 
+    const addTodoItem = (title) => {
+        const newTodo = {
+            id: 4, // We'll replace this with a dynamically generated ID later
+            title: title,
+            completed: false,
+        };
+        setTodos([...todos, newTodo]);
+    };
+
     return (
         <div>
-            <InputTodo />
+            <InputTodo addTodoItem={addTodoItem} /> {/* Pass addTodoItem as a prop */}
             <TodosList todosProps={todos} handleChange={handleChange} delTodo={delTodo} />
         </div>
     );
