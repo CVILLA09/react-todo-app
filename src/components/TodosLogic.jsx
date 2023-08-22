@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import InputTodo from '@/components/InputTodo';
 import TodosList from '@/components/TodosList';
 
@@ -29,7 +30,7 @@ const TodosLogic = () => {
 
     const addTodoItem = (title) => {
         const newTodo = {
-            id: 4, // We'll replace this with a dynamically generated ID later
+            id: uuidv4(),
             title: title,
             completed: false,
         };
