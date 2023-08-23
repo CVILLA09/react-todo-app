@@ -20,6 +20,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+- [👀 Preview](#preview)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -50,6 +51,12 @@ The core functionality of the project includes:
 - Editing and updating existing items.
 - Persisting the state in local storage (Optional).
 - Implementing React lifecycle methods and hooks.
+
+<br/>
+
+# Preview 👀 <a name="preview"></a>
+
+![Preview of Todo List App](https://github.com/CVILLA09/react-todo-app/blob/feature/setup-project-vite/img/todos-preview.gif?raw=true)
 
 <br/>
 
